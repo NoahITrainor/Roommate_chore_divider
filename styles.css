@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #7228ea;
+    color: white;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    margin: 5px;
+    padding: 10px;
+    background-color: #5a1eb4;
+    color: white;
+}
+
+nav a.current-page {
+    background-color: white;
+    color: #5a1eb4;
+}
+
+nav a:hover {
+    background-color: #e7dcfa;
+    color: #333333;
+}
+
+main {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.page-heading,
+.content-section,
+.assignment-card,
+.note {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.page-heading h2,
+.content-section h2,
+.note h2 {
+    margin-top: 0;
+    color: #5a1eb4;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+.action-link {
+    display: inline-block;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.assignment-list {
+    margin-bottom: 20px;
+}
+
+.assignment-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.assignment-card {
+    width: 42%;
+    text-align: left;
+}
+
+.assignment-card h2 {
+    color: #5a1eb4;
+}
+
+.assignment-card ul {
+    padding-left: 22px;
+}
+
+.assignment-card li {
+    margin-bottom: 10px;
+}
+
+.note {
+    background-color: #eee7fa;
+}
+
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.text-input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #999999;
+}
+
+.add-button,
+.remove-button {
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+th {
+    background-color: #eee7fa;
+}
+
+footer {
+    padding: 12px;
+    background-color: #dddddd;
+    color: #444444;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        width: 92%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .assignment-row {
+        flex-direction: column;
+    }
+
+    .assignment-card {
+        width: 85%;
+    }
+
+    .text-input {
+        width: 85%;
+    }
+}

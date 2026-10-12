@@ -3,24 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Roommate Chore Divider
-    </title>
-    
-    
-</head>
-<body style="text-align: center;">
-    <h1>
-        Roommate Chore Divider
-    </h1>
+    <title>Roommate Chore Divider</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="buttons.css">
-    <button class="add-button">
-        Add Roommate
-    </button>
+</head>
+<body>
+    <header>
+        <h1>Roommate Chore Divider</h1>
+        <nav>
+            <a class="current-page" href="index.html">Weekly Assignments</a>
+            <a href="chores.html">Manage Chores</a>
+            <a href="roommates.html">Manage Roommates</a>
+        </nav>
+    </header>
 
-    <button class="remove-button">
-        Add Remove
-    </button>
+    <main>
+        <section class="page-heading">
+            <h2>This Week's Assignments</h2>
+            <p>Everyone has an even share of 6 points this week.</p>
+        </section>
 
+        <div class="action-buttons">
+            <a class="add-button action-link" href="roommates.html#add-roommate">Add Roommate</a>
+            <a class="remove-button action-link" href="roommates.html#remove-roommate">Remove Roommate</a>
+        </div>
+
+        <section class="assignment-list">
+            <div class="assignment-row">
+                <article class="assignment-card">
+                    <h2>Alex — 6 points</h2>
+                    <ul>
+                        <li><label><input type="checkbox"> Kitchen deep clean — 4 points</label></li>
+                        <li><label><input type="checkbox"> Take out bins — 2 points</label></li>
+                    </ul>
+                </article>
+
+                <article class="assignment-card">
+                    <h2>Jordan — 6 points</h2>
+                    <ul>
+                        <li><label><input type="checkbox"> Vacuum shared areas — 3 points</label></li>
+                        <li><label><input type="checkbox"> Mop the floors — 3 points</label></li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="assignment-row">
+                <article class="assignment-card">
+                    <h2>Sam — 6 points</h2>
+                    <ul>
+                        <li><label><input type="checkbox"> Clean the bathroom — 4 points</label></li>
+                        <li><label><input type="checkbox"> Wipe kitchen counters — 2 points</label></li>
+                    </ul>
+                </article>
+
+                <article class="assignment-card">
+                    <h2>Taylor — 6 points</h2>
+                    <ul>
+                        <li><label><input type="checkbox"> Grocery run — 4 points</label></li>
+                        <li><label><input type="checkbox"> Tidy the entryway — 2 points</label></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="note">
+            <h2>How points work</h2>
+            <p>Chores with a higher point value take more time or effort. The points are shared evenly among the roommates.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Roommate Chore Divider</p>
+    </footer>
 </body>
 </html>

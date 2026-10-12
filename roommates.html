@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Roommates | Roommate Chore Divider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="buttons.css">
+</head>
+<body>
+    <header>
+        <h1>Roommate Chore Divider</h1>
+        <nav>
+            <a href="index.html">Weekly Assignments</a>
+            <a href="chores.html">Manage Chores</a>
+            <a class="current-page" href="roommates.html">Manage Roommates</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h2>Manage Roommates</h2>
+            <p>Add or remove the people who share chores in your household.</p>
+        </section>
+
+        <div class="action-buttons">
+            <a class="add-button action-link" href="#add-roommate">Add Roommate</a>
+            <a class="remove-button action-link" href="#remove-roommate">Remove Roommate</a>
+        </div>
+
+        <section class="content-section">
+            <h2>Current Roommates</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Weekly Points</th>
+                </tr>
+                <tr>
+                    <td>Alex</td>
+                    <td>6 points</td>
+                </tr>
+                <tr>
+                    <td>Jordan</td>
+                    <td>6 points</td>
+                </tr>
+                <tr>
+                    <td>Sam</td>
+                    <td>6 points</td>
+                </tr>
+                <tr>
+                    <td>Taylor</td>
+                    <td>6 points</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content-section" id="add-roommate">
+            <h2>Add a Roommate</h2>
+            <form action="#" method="GET">
+                <label for="roommate-name">Roommate name:</label>
+                <input class="text-input" type="text" id="roommate-name" name="roommate-name">
+                <input class="add-button" type="submit" value="Add Roommate">
+            </form>
+        </section>
+
+        <section class="content-section" id="remove-roommate">
+            <h2>Remove a Roommate</h2>
+            <form action="#" method="GET">
+                <label for="roommate-to-remove">Choose a roommate:</label>
+                <select class="text-input" id="roommate-to-remove" name="roommate-to-remove">
+                    <option value="alex">Alex</option>
+                    <option value="jordan">Jordan</option>
+                    <option value="sam">Sam</option>
+                    <option value="taylor">Taylor</option>
+                </select>
+                <input class="remove-button" type="submit" value="Remove Roommate">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Roommate Chore Divider</p>
+    </footer>
+</body>
+</html>

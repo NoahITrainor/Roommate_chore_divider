@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Chores | Roommate Chore Divider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="buttons.css">
+</head>
+<body>
+    <header>
+        <h1>Roommate Chore Divider</h1>
+        <nav>
+            <a href="index.html">Weekly Assignments</a>
+            <a class="current-page" href="chores.html">Manage Chores</a>
+            <a href="roommates.html">Manage Roommates</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h2>Manage Chores</h2>
+            <p>Add chores and choose how many points each one is worth.</p>
+        </section>
+
+        <section class="content-section" id="add-chore">
+            <h2>Add a Chore</h2>
+            <form action="#" method="GET">
+                <label for="chore-name">Chore name:</label>
+                <input class="text-input" type="text" id="chore-name" name="chore-name">
+
+                <label for="chore-points">Point value:</label>
+                <select class="text-input" id="chore-points" name="chore-points">
+                    <option value="1">1 point</option>
+                    <option value="2">2 points</option>
+                    <option value="3">3 points</option>
+                    <option value="4">4 points</option>
+                    <option value="5">5 points</option>
+                </select>
+
+                <input class="add-button" type="submit" value="Add Chore">
+            </form>
+        </section>
+
+        <section class="content-section" id="remove-chore">
+            <h2>Current Chores</h2>
+            <p>There are 24 points available to share this week.</p>
+            <table>
+                <tr>
+                    <th>Chore</th>
+                    <th>Point Value</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Kitchen deep clean</td>
+                    <td>4 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Clean the bathroom</td>
+                    <td>4 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Grocery run</td>
+                    <td>4 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Vacuum shared areas</td>
+                    <td>3 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Mop the floors</td>
+                    <td>3 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Take out bins</td>
+                    <td>2 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Wipe kitchen counters</td>
+                    <td>2 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Tidy the entryway</td>
+                    <td>2 points</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Roommate Chore Divider</p>
+    </footer>
+</body>
+</html>
